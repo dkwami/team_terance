@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TeamTerance</title>
+  <title><%= yield(:title) %> | Team Terance Foundation</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
-
+  <%= yield %>
+  <footer>
+    <ul class="nav navbar-fixed-bottom">
+      <li><%= link_to "Home",	:root %></li>
+      <li><%= link_to "Mission",   :mission %></li>
+      <li><%= link_to "Forums",   :forums %></li>
+      <li><%= link_to "Contact Us",   :contact %></li>
+    </ul>
+  </footer>
 </body>
 </html>

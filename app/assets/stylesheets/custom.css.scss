@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+footer {
+  float: left;
+  padding-left: 30%;  
+
+  ul {
+    border: 2px solid #000;
+    background: #ddd;
+    float: left;
+    list-style: none;
+    padding-left: 10%;
+    /*margin: 10%;  /*puts a margin on both sides*/
+
+    li {
+      float: left;
+      float-left: 0px;
+      margin-left: 13%;
+      padding-left: 10px;
+    }
+  }
+}
