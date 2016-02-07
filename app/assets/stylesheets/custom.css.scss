@@ -1,37 +1,67 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* UNIVERSAL */
+
+html{
+  overflow-y: scroll;
+}
+
 body {
-  padding-top: 60px;
+ // padding-top: 60px; 
+
+  height: 100%;
+  //background: #ac3; // lime green
 }
 
 textarea{
   resize: vertical;
 }
 
-/*#welcome {
-  margin: 10%;
-}*/
 
+/* TITLES */
 .center {
   h1 {
     font-size: 8em;
     margin-bottom: 10px;
     letter-spacing: -3px;
     background: #ccc;
+    opacity: 0.7;
   }
+
+  /* Welcome Page Banner */
+  h1#welcome {
+    margin: 10%;
+    opacity: 1.0;
+  }
+
   h2 {
     font-size: 2em;
     letter-spacing: 1px;
     font-weight: bold;
+    padding-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    //background: #a3c4d1; // light blue
   }
+
+  //background: #da2; // goldenrod
+  background-image: url('/assets/marathon-runners-1.jpg');
   text-align: center;
+  height: 100%;
+}
+
+#marathon {
+  width: 100%;  
 }
 
 
+/* FOOTER TODO HIDE ON HOME PAGE */
 footer {
   float: left;
-  padding-left: 30%;  
+  //padding-left: 30%;  
+  bottom: 0;
+  height: 60px;
 
   ul {
     border: 2px solid #000;
